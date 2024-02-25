@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -18,7 +25,15 @@
       background-color: #0a0c1b;
       color: white;
     }
-  
+    b{
+      color: hsl(277, 64%, 61%);
+    }
+    #desc, li{
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+    #num{
+      color: white;
+    }
     @media only screen and (min-device-width: 426px){
     body{
       background-color: #0a0c1b;
@@ -37,7 +52,6 @@
       justify-content: center;
       border: 2px solid transparent;
       width: 40%;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       background-color: #1c1938;
       border-radius: 10px 0 0 10px;
     }
@@ -51,11 +65,12 @@
     #large-text{
       font-size: 2em;
       font-weight: 700;
+      font-family: Inter;
       color: hsla(0, 0%, 100%, 0.75);
       
     }
     #desc{
-      
+      font-family: 'Lexend Deca';
       font: 10px;
       color: hsla(0, 0%, 100%, 0.6) ;
     }
@@ -63,9 +78,7 @@
       width: 70%;
       height: 70%;
     }
-    b{
-      color: hsl(277, 64%, 61%);
-    }
+    
     li{
       list-style-type: none;
 
@@ -89,7 +102,7 @@
         
         width: 80%;
         position: relative;
-        bottom: 20cm;
+        bottom: 18cm;
         left: auto;
         width:  100%;
         border-radius: 10px 10px 0 0 ;
@@ -118,11 +131,13 @@
       }
       #large-text{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 25px;
+        font-size: 23px;
+        width: 3cm;
       }
       #desc{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
+        font-family: 'Lexend Deca';
+        font-size: 13px;
+        width: 5cm;
       }
       .text{
         position: relative;
@@ -132,7 +147,7 @@
         list-style-type: none;
         display: inline-block;
         padding: 0 30% 10% 30% ;
-        font-size: 20px;
+        font-size: 15px;
         position: relative;
         bottom: 20px;
       }
