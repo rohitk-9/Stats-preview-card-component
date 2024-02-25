@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    body{
+      background-color: #0a0c1b;
+      color: white;
+    }
+  
+    @media only screen and (min-device-width: 426px){
+    body{
+      background-color: #0a0c1b;
+      color: white;
+      font-size: 15px;
+    }
+    .main{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 3.3cm;
+    }
+    .main-text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid transparent;
+      width: 40%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: #1c1938;
+      border-radius: 10px 0 0 10px;
+    }
+    img{
+      width: 40%;
+      display: inline-block;
+      border-radius: 0px 10px 10px 0px;
+      filter:hue-rotate(-15deg);
+      opacity: 0.9;
+    }
+    #large-text{
+      font-size: 2em;
+      font-weight: 700;
+      color: hsla(0, 0%, 100%, 0.75);
+      
+    }
+    #desc{
+      
+      font: 10px;
+      color: hsla(0, 0%, 100%, 0.6) ;
+    }
+    .text{
+      width: 70%;
+      height: 70%;
+    }
+    b{
+      color: hsl(277, 64%, 61%);
+    }
+    li{
+      list-style-type: none;
+
+      width: 2cm;
+      display: inline-block;
+      color: hsla(0, 0%, 100%, 0.6) ;
+      margin-right: 35px;
+
+    }
+    #num{
+      font-size: 1.5em; 
+      color:hsla(0, 0%, 100%, 0.75) ;
+    }
+  }   
+
+    @media only screen and (max-device-width: 425px){
+      body{
+        display: inline-flex;
+      }
+      img{
+        
+        width: 80%;
+        position: relative;
+        bottom: 20cm;
+        left: auto;
+        width:  100%;
+        border-radius: 10px 10px 0 0 ;
+        margin: 0 auto;
+      }
+      .main{
+        position: relative;
+        top: 6.7cm;
+        left: 2.6%;
+        border-radius: 0 0 10px 10px;
+        width: 80%;
+        text-align: center;
+        background-color: #1c1938;
+        margin: 0 auto;
+        display: inline-block;
+        height: 17cm;
+        margin-bottom: 300px;
+        
+      }
+      .main-text{
+        width: 70%;
+        display: inline-flex;
+        position: relative;
+        top: 3%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      #large-text{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+      }
+      #desc{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+      }
+      .text{
+        position: relative;
+        top: 1.3cm;
+      }
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 30% 10% 30% ;
+        font-size: 20px;
+        position: relative;
+        bottom: 20px;
+      }
+      #num{
+        font-size: 30px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="main-text">
+    <div class="text">
+  <span id="large-text">Get <b>insights</b> that help your business grow.</span>
+    <br><br>
+  <span id="desc">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</span>
+    <br><br><br><br><br>
+  <li><span id="num">10k+</span> companies</li>
+  <li><span id="num">314</span> templates</li>
+  <li><span id="num">12m+</span> queries</li>
+  </div>
+  </div>
+  <img src="img.jpg">
+
+</div>
+</body>
+</html>
